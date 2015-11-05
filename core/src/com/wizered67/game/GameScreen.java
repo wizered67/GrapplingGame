@@ -59,11 +59,11 @@ public class GameScreen implements Screen {
 		//allEntities.add(new StaticEntity("Ground", new Rectangle2D.Float(0, 0, 50, 200), new Vector2(500, 300)));
 		player = new PlayerEntity("Player 1", this);
 		allEntities.add(player);
-		for (int i = 0; i < 20; i++){
+		for (int i = 0; i < 40; i++){
 			//allEntities.add(new PlayerEntity("Player 2", this));
 			//System.out.println(i);
 			//allEntities.add(new TestEntity());
-			int testSize = 30;
+			int testSize = 32;
 			allEntities.add(new StaticEntity("Ground", new Rectangle2D.Float(0, 0, MathUtils.random(testSize, testSize), MathUtils.random(testSize, testSize)), new Vector2(MathUtils.random(0, Gdx.graphics.getWidth()), MathUtils.random(0, Gdx.graphics.getHeight()))));
 		}
 		

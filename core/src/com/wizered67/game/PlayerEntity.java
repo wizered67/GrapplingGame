@@ -42,12 +42,14 @@ public class PlayerEntity implements Entity{
      	boundingShapes.add(head);
 		previousCollisions = new ArrayList<Collision>();
 		currentCollisions = new ArrayList<Collision>();
-		
-		//position = new Vector2(0, 0);
-		//Vector2 randomPos = new Vector2(MathUtils.random(0, Gdx.graphics.getWidth()), MathUtils.random(0, Gdx.graphics.getHeight()));
-        //while (getCollideSolid(randomPos) != null){
-        //	randomPos = new Vector2(MathUtils.random(0, Gdx.graphics.getWidth()), MathUtils.random(0, Gdx.graphics.getHeight()));
-        //}
+		/*
+		position = new Vector2(0, 0);
+		Vector2 randomPos = new Vector2(MathUtils.random(0, Gdx.graphics.getWidth()), MathUtils.random(0, Gdx.graphics.getHeight()));
+        while (testAllCollisions(randomPos, new Vector2(0, 0))){
+        	randomPos = new Vector2(MathUtils.random(0, Gdx.graphics.getWidth()), MathUtils.random(0, Gdx.graphics.getHeight()));
+        }
+		position = randomPos;
+		*/
 		position = new Vector2(Gdx.graphics.getWidth() / 2 - getWidth()/2,Gdx.graphics.getHeight() / 2 -getHeight()/2);
 		velocity = new Vector2(0, 0);
 		acceleration = new Vector2(0, 0);
